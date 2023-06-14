@@ -23,7 +23,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: #f1faee;
-
     background-color: #1d3557;
     border-radius: 15px;
     font-family: 'Cairo', sans-serif;
@@ -59,19 +58,6 @@ body {
     color: #a8dadc;
 }
 
-#centered {
-    position: absolute;
-    top: 128px;
-    left: 0;
-    width: 1440px;
-    height: 128px;
-    color: aliceblue;
-    background-color: rgb(32, 32, 32);
-    text-align: center;
-    line-height: 25px;
-    padding: 24px;
-    font-size: 18px;
-}
 
 canvas {
     position: absolute;
