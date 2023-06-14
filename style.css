@@ -7,6 +7,10 @@ font-family: 'Titillium Web', sans-serif;
     box-sizing: border-box;
 }
 
+.navbar {
+    width: auto;
+}
+
 body {
     box-sizing: border-box;
     background-image: url(Images/background.png);
@@ -24,9 +28,10 @@ body {
     margin-right: auto;
     color: #f1faee;
     background-color: #1d3557;
-    border-radius: 15px;
     font-family: 'Cairo', sans-serif;
     font-weight: 850;
+    text-align: center;
+    padding: 60px;
 }
 
 #credit {
