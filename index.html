@@ -18,15 +18,40 @@
     <!--This here is the Tensorflow.js script-->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
 
+    <style>
+        img {
+            left: 500px;
+            height: 50px;
+            width: 50px;
+            padding: 8px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <nav class="nav bg-black py-3" id="navbar">
-        <h1 id="heading_text">Bangla Digit Classifier</h1>
-    </nav>
+    <div>
+        <nav class="nav bg-black py-3 glowing-font" id="navbar" style="background-color: #457b9d;">
+            <h1 id="heading_text">Bangla Digit Classifier</h1>
+        </nav>
+    </div>
 
-    <footer class="footer">
+    <div>
+        <canvas id="canvas" width="280" height="280"></canvas>
+
+        <button class="glowing-font" id='button_predict'>Predict</button>
+
+        <button class="glowing-font" id='button_clear' onclick=clear2()>Clear</button>
+    </div>
+
+
+    <div id='predictions' class='text-center glowing-font-1'>
+        <p id="prediction_heading">Prediction:</p>
+        <p id="result">-</p>
+        <p id="confidence">Confidence: -</p>
+    </div>
+
+    <footer class="footer glowing-font">
         <p id="credit">Munem Shahriar</p>
         <a href="https://github.com/munem-shahriar697/" target="_blank">
             <img src='Images/Github Logo.png' />
@@ -34,37 +59,7 @@
         <a href="https://www.linkedin.com/in/munem-shahriar/" target="_blank">
             <img src='Images/Linkedin Logo.png' />
         </a>
-        <style>
-            img {
-                left: 500px;
-                height: 50px;
-                width: 50px;
-                padding: 8px;
-            }
-
-            #credit {
-                width: auto;
-                height: 50px;
-                font-size: 17px;
-                padding: 8px 0px;
-                display: inline-block;
-            }
-        </style>
     </footer>
-    <canvas id="canvas" width="280" height="280"></canvas>
-
-    <button id='button_predict'>Predict</button>
-
-    <button id='button_clear' onclick=clear2()>Clear</button>
-
-
-    <div id='predictions' class='text-center'>
-        <p id="prediction_heading">Prediction:</p>
-        <p id="result">-</p>
-        <p id="confidence">Confidence: -</p>
-    </div>
-
-
 
 
     <script type="application/javascript" src="script.js"></script>

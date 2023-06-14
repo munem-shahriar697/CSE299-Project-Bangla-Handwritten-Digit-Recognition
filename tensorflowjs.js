@@ -1,6 +1,6 @@
 
 
-characters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+characters = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯']
 
 
 var base_url = window.location.origin;

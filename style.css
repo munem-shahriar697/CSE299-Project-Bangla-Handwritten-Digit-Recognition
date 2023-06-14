@@ -12,7 +12,7 @@ body {
     background-image: url(Images/background.png);
     background-size: 115%;
     background-position: bottom;
-    ;
+    background-color: #457b9d;
     background-attachment: fixed;
     background-repeat: no-repeat;
 
@@ -22,15 +22,24 @@ body {
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
-    color: white;
-    background-image: linear-gradient(45deg, rgb(16, 55, 131), rgb(47, 97, 206), rgb(16, 55, 131));
+    color: #f1faee;
+
+    background-color: #1d3557;
     border-radius: 15px;
     font-family: 'Cairo', sans-serif;
     font-weight: 850;
 }
 
+#credit {
+    width: auto;
+    height: 50px;
+    font-size: 17px;
+    padding: 8px 0px;
+    display: inline-block;
+}
+
 #navbar {
-    background-image: url(Images/texture.png);
+    color: #457b9d;
 }
 
 .footer {
@@ -38,17 +47,16 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    top: auto;
-    background-color: rgb(0, 0, 0);
-    color: white;
+    color: black;
     text-align: center;
-
 }
+
 
 .footer p {
     padding: 0px;
     margin: auto;
     font-size: small;
+    color: #a8dadc;
 }
 
 #centered {
@@ -69,7 +77,17 @@ canvas {
     position: absolute;
     top: 283px;
     left: 580px;
-    border: 2px solid red;
+    border: 2px solid #e63946;
+}
+
+.glowing-font {
+    text-shadow: 0 0 2px #457b9d, 0 0 4px #457b9d, 0 0 6px #457b9d, 0 0 8px #457b9d, 0 0 12px #457b9d;
+    color: #457b9d;
+}
+
+.glowing-font-1 {
+    text-shadow: 0 0 2px #008055, 0 0 4px #008055, 0 0 5px #008055, 0 0 6px #008055, 0 0 10px #008055;
+    color: #dbf1ff;
 }
 
 #button_predict {
@@ -79,10 +97,13 @@ canvas {
     display: inline-block;
     width: 100px;
     height: 50px;
-    border: 2px solid #F2AAAA;
-    border-radius: 5px;
+    border: 2px solid #1d3557;
+    border-radius: 10px;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
+    color: #a8dadc;
+    background-color: #1d3557;
+    font-weight: 700;
 }
 
 #button_clear {
@@ -92,17 +113,20 @@ canvas {
     display: inline-block;
     width: 100px;
     height: 50px;
-    border: 2px solid #F2AAAA;
-    border-radius: 5px;
+    border: 2px solid #1d3557;
+    border-radius: 10px;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
+    color: #a8dadc;
+    background-color: #1d3557;
+    font-weight: 700;
 }
 
 #predictions {
     position: absolute;
     top: 335px;
     left: 1000px;
-    color: white;
+    color: #f1faee;
     font-family: 'Titillium Web', sans-serif;
 }
 
